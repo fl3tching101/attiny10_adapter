@@ -1,0 +1,224 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "ATTiny10 Adapter Board"
+Date "2021-12-29"
+Rev "1.0"
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L MCU_Microchip_ATtiny:ATtiny10-TS U1
+U 1 1 61CCB0F8
+P 5450 3700
+F 0 "U1" H 4920 3746 50  0000 R CNN
+F 1 "ATtiny10-TS" H 4920 3655 50  0000 R CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-6" H 5450 3700 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-8127-AVR-8-bit-Microcontroller-ATtiny4-ATtiny5-ATtiny9-ATtiny10_Datasheet.pdf" H 5450 3700 50  0001 C CNN
+	1    5450 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C1
+U 1 1 61CCC308
+P 4150 3700
+F 0 "C1" H 4242 3746 50  0000 L CNN
+F 1 "1uF" H 4242 3655 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 4150 3700 50  0001 C CNN
+F 3 "~" H 4150 3700 50  0001 C CNN
+	1    4150 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR01
+U 1 1 61CD048F
+P 4150 3550
+F 0 "#PWR01" H 4150 3400 50  0001 C CNN
+F 1 "VCC" H 4165 3723 50  0000 C CNN
+F 2 "" H 4150 3550 50  0001 C CNN
+F 3 "" H 4150 3550 50  0001 C CNN
+	1    4150 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR02
+U 1 1 61CD0EA5
+P 4150 3850
+F 0 "#PWR02" H 4150 3600 50  0001 C CNN
+F 1 "GND" H 4155 3677 50  0000 C CNN
+F 2 "" H 4150 3850 50  0001 C CNN
+F 3 "" H 4150 3850 50  0001 C CNN
+	1    4150 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR03
+U 1 1 61CD8EF8
+P 5450 3000
+F 0 "#PWR03" H 5450 2850 50  0001 C CNN
+F 1 "VCC" H 5465 3173 50  0000 C CNN
+F 2 "" H 5450 3000 50  0001 C CNN
+F 3 "" H 5450 3000 50  0001 C CNN
+	1    5450 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5450 3000 5450 3100
+$Comp
+L power:GND #PWR04
+U 1 1 61CDA0C6
+P 5450 4400
+F 0 "#PWR04" H 5450 4150 50  0001 C CNN
+F 1 "GND" H 5455 4227 50  0000 C CNN
+F 2 "" H 5450 4400 50  0001 C CNN
+F 3 "" H 5450 4400 50  0001 C CNN
+	1    5450 4400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5450 4400 5450 4300
+$Comp
+L Connector_Generic:Conn_01x03 J1
+U 1 1 61CDA939
+P 7050 3750
+F 0 "J1" H 7000 4100 50  0000 L CNN
+F 1 "Conn_01x03" H 6850 4000 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 7050 3750 50  0001 C CNN
+F 3 "~" H 7050 3750 50  0001 C CNN
+	1    7050 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x03 J2
+U 1 1 61CDD3B4
+P 7550 3750
+F 0 "J2" H 7468 3425 50  0000 C CNN
+F 1 "Conn_01x03" H 7468 3516 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 7550 3750 50  0001 C CNN
+F 3 "~" H 7550 3750 50  0001 C CNN
+	1    7550 3750
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR05
+U 1 1 61CDF94B
+P 6800 3750
+F 0 "#PWR05" H 6800 3500 50  0001 C CNN
+F 1 "GND" V 6805 3622 50  0000 R CNN
+F 2 "" H 6800 3750 50  0001 C CNN
+F 3 "" H 6800 3750 50  0001 C CNN
+	1    6800 3750
+	0    1    1    0   
+$EndComp
+$Comp
+L power:VCC #PWR06
+U 1 1 61CE05A4
+P 7800 3750
+F 0 "#PWR06" H 7800 3600 50  0001 C CNN
+F 1 "VCC" V 7815 3878 50  0000 L CNN
+F 2 "" H 7800 3750 50  0001 C CNN
+F 3 "" H 7800 3750 50  0001 C CNN
+	1    7800 3750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6800 3750 6850 3750
+Wire Wire Line
+	7750 3750 7800 3750
+Text Label 6100 3400 0    50   ~ 0
+PB0
+Text Label 6100 3500 0    50   ~ 0
+PB1
+Text Label 6100 3600 0    50   ~ 0
+PB2
+Text Label 6100 3700 0    50   ~ 0
+PB3
+Text Label 6800 3650 2    50   ~ 0
+PB0
+Text Label 6800 3850 2    50   ~ 0
+PB1
+Text Label 7800 3650 0    50   ~ 0
+PB2
+Text Label 7800 3850 0    50   ~ 0
+PB3
+Wire Wire Line
+	6050 3400 6100 3400
+Wire Wire Line
+	6050 3500 6100 3500
+Wire Wire Line
+	6050 3600 6100 3600
+Wire Wire Line
+	6050 3700 6100 3700
+Wire Wire Line
+	6800 3650 6850 3650
+Wire Wire Line
+	6800 3850 6850 3850
+Wire Wire Line
+	7800 3850 7750 3850
+Wire Wire Line
+	7800 3650 7750 3650
+Wire Wire Line
+	4150 3550 4150 3600
+Wire Wire Line
+	4150 3800 4150 3850
+$Comp
+L Device:LED_ALT D1
+U 1 1 61D02DF6
+P 3700 3800
+F 0 "D1" V 3739 3682 50  0000 R CNN
+F 1 "RED" V 3648 3682 50  0000 R CNN
+F 2 "LED_SMD:LED_0603_1608Metric" H 3700 3800 50  0001 C CNN
+F 3 "~" H 3700 3800 50  0001 C CNN
+	1    3700 3800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_Small R1
+U 1 1 61D08A59
+P 3700 3500
+F 0 "R1" H 3759 3546 50  0000 L CNN
+F 1 "1k" H 3759 3455 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 3700 3500 50  0001 C CNN
+F 3 "~" H 3700 3500 50  0001 C CNN
+	1    3700 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3700 3600 3700 3650
+$Comp
+L Device:Jumper_NC_Small JP1
+U 1 1 61D0E172
+P 3600 3350
+F 0 "JP1" H 3600 3562 50  0000 C CNN
+F 1 "Jumper_NC_Small" H 3600 3471 50  0000 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_Pad1.0x1.5mm" H 3600 3350 50  0001 C CNN
+F 3 "~" H 3600 3350 50  0001 C CNN
+	1    3600 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3700 3350 3700 3400
+Wire Wire Line
+	3700 3950 3700 4000
+$Comp
+L power:GND #PWR07
+U 1 1 61D0FE91
+P 3700 4000
+F 0 "#PWR07" H 3700 3750 50  0001 C CNN
+F 1 "GND" H 3705 3827 50  0000 C CNN
+F 2 "" H 3700 4000 50  0001 C CNN
+F 3 "" H 3700 4000 50  0001 C CNN
+	1    3700 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3500 3350 3450 3350
+Text Label 3450 3350 2    50   ~ 0
+PB2
+$EndSCHEMATC
